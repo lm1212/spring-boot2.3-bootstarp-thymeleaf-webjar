@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dalaoyang</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container"><br/>
+    <div class="alert alert-success">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        Hello, <strong>Dalaoyang!</strong>
+    </div>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+</div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('p').animate({
+            fontSize: '48px'
+        }, "slow");
+    });
+</script>
+</head>
+
+</html>
